@@ -176,9 +176,8 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
 }
+
 .ds-container::before {
     width: 100%;
     height: 170px;
@@ -190,29 +189,25 @@ body {
     overflow: hidden;
     z-index: 1;
 }
-.ds-container.toggled
-{
-    grid-template-columns: 1fr;
-}
+
 /* SIDEBAR */
 .sidebar {
     background: transparent;
     border-right: 0;
     box-shadow: 0 0 2rem 0 rgba(0, 0, 0, .05);
-    /* position: fixed; */
+    position: fixed;
     z-index: 3;
-    /* min-width: 250px;
-    max-height: 100vh; */
-    width: 100%;
+    min-width: 250px;
+    max-height: 100vh;
     height: 100%;
     transition: all .3s ease;
     right: 0;
 }
 
 .sidebar.toggled {
-    display: none;
-    /* max-width: 0px;
-    right: -330px; */
+    /* display: none; */
+    max-width: 0px;
+    right: -330px;
 }
 
 .sidebar-content {
@@ -337,8 +332,8 @@ a.sidebar-link {
 /* END SIDEBAR */
 /* Page Content */
 .page-content {
-    /* width: 83.33333333%;
-    right: 330px; */
+    width: 83.33333333%;
+    right: 330px;
     position: relative;
     height: 100%;
     transition: all .3s ease;
@@ -589,6 +584,7 @@ ul.responsive-table2 {
         text-align: right;
         flex-basis: 50%;
     }
+
     .tab-v1 button {
         width: 100%;
     }
@@ -958,9 +954,6 @@ html[dir="ltr"] #toasts {
 
 /* ipad */
 @media only screen and (max-width: 1024px) {
-    .ds-container {
-        grid-template-columns: 1fr;
-      }
     .page-content {
         width: 100% !important;
         right: 0px;
@@ -974,7 +967,7 @@ html[dir="ltr"] #toasts {
         position: fixed;
         z-index: 2001;
         top: 45px;
-        max-width: 250px;
+        min-width: 250px;
         max-height: 100vh;
         height: 100%;
     }

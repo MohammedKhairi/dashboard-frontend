@@ -3,13 +3,12 @@ function  activeSidebar() {
     $("#open-sidebar").prop("checked", true);
     $(".sidebar").removeClass("toggled");
     $(".page-content").removeClass("toggled");
-    $(".ds-container").removeClass("toggled");
 }
 function  disactiveSidebar() {
     $("#open-sidebar").prop("checked", false);
     $(".sidebar").addClass("toggled");
     $(".page-content").addClass("toggled");
-    $(".ds-container").addClass("toggled");
+    $(".page-content").addClass("toggled");
 }
 $(document).ready(function () {
     // check local storage for theme setting

@@ -3,7 +3,7 @@ function  activeSidebar() {
     $("#open-sidebar").prop("checked", true);
     $(".sidebar").removeClass("toggled");
     $(".page-content").removeClass("toggled");
-    $(".ds-container").removeClass("toggled");
+    $(".page-content").removeClass("toggled");
 }
 function  disactiveSidebar() {
     $("#open-sidebar").prop("checked", false);

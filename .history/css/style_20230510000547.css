@@ -177,7 +177,7 @@ body {
     width: 100%;
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
 }
 .ds-container::before {
     width: 100%;
@@ -210,7 +210,7 @@ body {
 }
 
 .sidebar.toggled {
-    display: none;
+    /* display: none; */
     /* max-width: 0px;
     right: -330px; */
 }
