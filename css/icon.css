@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('icon-font/icomoon.eot?n7dcoy');
-  src:  url('icon-font/icomoon.eot?n7dcoy#iefix') format('embedded-opentype'),
-    url('icon-font/icomoon.ttf?n7dcoy') format('truetype'),
-    url('icon-font/icomoon.woff?n7dcoy') format('woff'),
-    url('icon-font/icomoon.svg?n7dcoy#icomoon') format('svg');
+  src:  url('icon-font/icomoon.eot?mvm1uh');
+  src:  url('icon-font/icomoon.eot?mvm1uh#iefix') format('embedded-opentype'),
+    url('icon-font/icomoon.ttf?mvm1uh') format('truetype'),
+    url('icon-font/icomoon.woff?mvm1uh') format('woff'),
+    url('icon-font/icomoon.svg?mvm1uh#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -19,10 +19,27 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-strikethrough:before {
+  content: "\e901";
+}
+.icon-unlink:before {
+  content: "\e903";
 }
 .icon-notification---Copy:before {
   content: "\e900";
@@ -54,6 +71,12 @@
 .icon-folder-plus:before {
   content: "\e931";
 }
+.icon-barcode:before {
+  content: "\e937";
+}
+.icon-qrcode:before {
+  content: "\e938";
+}
 .icon-cart:before {
   content: "\e93a";
 }
@@ -71,6 +94,12 @@
 }
 .icon-alarm:before {
   content: "\e950";
+}
+.icon-undo2:before {
+  content: "\e967";
+}
+.icon-redo2:before {
+  content: "\e968";
 }
 .icon-bubble2:before {
   content: "\e96e";
@@ -117,6 +146,9 @@
 .icon-switch:before {
   content: "\e9b6";
 }
+.icon-list-numbered:before {
+  content: "\e9b9";
+}
 .icon-list:before {
   content: "\e9ba";
 }
@@ -132,14 +164,23 @@
 .icon-sphere:before {
   content: "\e9c9";
 }
-.icon-link:before {
-  content: "\e9cb";
+.icon-attachment:before {
+  content: "\e9cd";
 }
 .icon-eye:before {
   content: "\e9ce";
 }
+.icon-eye-blocked:before {
+  content: "\e9d1";
+}
 .icon-sun:before {
   content: "\e9d4";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-star-full:before {
+  content: "\e9d9";
 }
 .icon-heart:before {
   content: "\e9da";
@@ -164,6 +205,45 @@
 }
 .icon-play2:before {
   content: "\ea15";
+}
+.icon-text-height:before {
+  content: "\ea5f";
+}
+.icon-bold:before {
+  content: "\ea62";
+}
+.icon-underline:before {
+  content: "\ea63";
+}
+.icon-italic:before {
+  content: "\ea64";
+}
+.icon-table2:before {
+  content: "\ea71";
+}
+.icon-paragraph-left:before {
+  content: "\ea77";
+}
+.icon-paragraph-center:before {
+  content: "\ea78";
+}
+.icon-paragraph-right:before {
+  content: "\ea79";
+}
+.icon-paragraph-justify:before {
+  content: "\ea7a";
+}
+.icon-indent-increase:before {
+  content: "\ea7b";
+}
+.icon-indent-decrease:before {
+  content: "\ea7c";
+}
+.icon-embed2:before {
+  content: "\ea80";
+}
+.icon-share2:before {
+  content: "\ea82";
 }
 .icon-google:before {
   content: "\ea88";

@@ -1,0 +1,56 @@
+<div class="card py-2 editor-content">
+    <div class="row justify-content-start align-items-center mx-1">
+        <!-- Headings -->
+        <div class="col">
+            <select id="formatBlock" class="adv-option-button bg-transparent border">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+            </select>
+        </div>
+        <!-- Font -->
+        <div class="col"><select id="fontName" class="adv-option-button bg-transparent border"></select></div>
+        <div class="col"><select id="fontSize" class="adv-option-button bg-transparent border"></select></div>
+        <!-- Text Format -->
+        <div class="col"><button id="bold" class="btn option-button format"><i class="icon-bold"></i></button></div>
+        <div class="col"><button id="italic" class="btn option-button format"><i class="icon-italic"></i></button></div>
+        <div class="col"><button id="underline" class="btn option-button format"><i class="icon-underline"></i></button></div>
+        <div class="col"><button id="strikethrough" class="btn option-button format"><i class="icon-strikethrough"></i></button></div>
+        <!-- List -->
+        <div class="col"><button id="insertOrderedList" class="btn option-button"><i class="icon-list-numbered"></i></button></div>
+        <div class="col"><button id="insertUnorderedList" class="btn option-button"><i class="icon-list2"></i></button></div>
+        <!-- Undo/Redo -->
+        <div class="col"><button id="undo" class="btn option-button"><i class="icon-undo2"></i></button></div>
+        <div class="col"><button id="redo" class="btn option-button"><i class="icon-redo2"></i></button></div>
+        <!-- Link -->
+        <div class="col"><button id="createLink" class="btn adv-option-button"><i class="icon-attachment"></i></button>
+        </div>
+        <div class="col"><button id="unlink" class="btn option-button"><i class="icon-unlink"></i></button></div>
+        <!-- Alignment -->
+        <div class="col"><button id="justifyLeft" class="btn option-button align"><i class="icon-paragraph-left"></i></button></div>
+        <div class="col"><button id="justifyCenter" class="btn option-button align"><i class="icon-paragraph-center"></i></button></div>
+        <div class="col"><button id="justifyRight" class="btn option-button align"><i class="icon-paragraph-right"></i></button></div>
+        <!-- Color -->
+        <!-- <div class="col">
+        <div class="input-wrapper">
+          <input type="color" id="foreColor" class="adv-option-button" />
+          <label for="foreColor">Font Color</label>
+        </div>
+      </div> -->
+        <!-- <div class="col">
+        <div class="input-wrapper">
+          <input type="color" id="backColor" class="adv-option-button" />
+          <label for="backColor">Highlight Color</label>
+        </div>
+      </div> -->
+    </div>
+    <!-- Here Content -->
+    <div id="text-input" contenteditable="true" style="min-height: 300px; border-top: 1px solid #ccc;padding: 5px;">
+    </div>
+    <!-- Here Content -->
+</div>
+
+<script src="js/textbox.js"></script>

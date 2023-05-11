@@ -255,14 +255,14 @@ abbr[title],abbr[data-bs-original-title] {
   cursor: help;
   text-decoration-skip-ink: none
 }
-
+/* ul {
+  list-style: none;
+}
 ol,
 ul {
   padding-right:0;
   padding-left:0;
-  list-style: none;
 }
-
 ol,
 ul,
 dl {
@@ -275,11 +275,12 @@ ul ul,
 ol ul,
 ul ol {
   margin-bottom: 0
-}
+} */
 
 b,
 strong {
-  font-weight: bolder
+  font-weight: bolder;
+  font-family: "fbold";
 }
 
 small, .small {
@@ -6096,6 +6097,9 @@ textarea.form-control-lg {
 .position-sticky {
   position: -webkit-sticky !important;
   position: sticky !important
+}
+.position-relative {
+  position: relative !important
 }
 
 .top-0 {

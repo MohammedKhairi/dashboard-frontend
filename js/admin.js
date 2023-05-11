@@ -1,4 +1,28 @@
-
+//######Language Array#########
+const Arb={
+    "close":"خروج",
+    "accept":"تاكيد",
+    "delete_message":"هل تريد متابعة حذف المحتوى",
+    "delete_title":"حذف محتوى",
+    "color":"اللون",
+    "bg":"الخلفية",
+    "format":"التنسيق",
+    "fsize":"حجم الخط",
+    
+};
+//
+const Eng={
+    "close":"Close",
+    "accept":"Accept",
+    "delete_message":" Are You Shore To Delete This Record ! ",
+    "delete_title":"Deleted Record",
+    "color":"Color",
+    "bg":"Background",
+    "format":"Format",
+    "fsize":"Font Size",
+};
+var _Lang={};
+//############################
 function  activeSidebar() {
     $("#open-sidebar").prop("checked", true);
     $(".sidebar").removeClass("toggled");
@@ -11,7 +35,7 @@ function  disactiveSidebar() {
     $(".page-content").addClass("toggled");
     $(".ds-container").addClass("toggled");
 }
-$(document).ready(function () {
+$(document).ready(function (){
     // check local storage for theme setting
     if (localStorage.getItem("theme"))
     {
@@ -38,6 +62,18 @@ $(document).ready(function () {
         activeSidebar();
         localStorage.setItem("sidebar", 1);
     }
+    //set language array
+    var dir = $("html").attr("dir");
+    if(dir == "rtl")
+    {
+        _Lang=Arb;
+    }
+    else
+    {
+        _Lang=Eng;
+
+    }
+
     
 });
 // toggle theme when button is clicked
@@ -78,7 +114,7 @@ $('.sidebar-item').click(function () {
 });
 
 //open and close sidebar
-$(document).on("click toch", ".menu-btn", function () {
+$(document).on("click toch", ".menu-btn-toggler", function () {
     // $(this).toggleClass("open");
     $(".sidebar").toggleClass("toggled");
     //    
@@ -148,3 +184,35 @@ function MsgError(txt) {
 	});
 }
 //
+//deleted button alert
+function DeleteBtnAlert($url="") {
+    //alert($url);
+    var html='';
+    html+='<div class="modal" id="DeleteModal">';
+    html+='  <div class="modal-dialog">';
+    html+='      <div class="modal-content">';
+    html+='        <div class="modal-header">';
+    html+='            <h5 class="modal-title" id="exampleModalLabel">'+_Lang.delete_title+'</h5>';
+    html+='        </div>';
+    html+='        <div class="modal-body">'+_Lang.delete_message;
+    html+='        </div>';
+    html+='        <div class="modal-footer">';
+    html+='            <button type="button" class="btn btn-secondary  reject-delete">'+_Lang.close+'</button>';
+    html+='            <button type="button" value='+$url+' class="btn btn-primary accept-delete">'+_Lang.accept+'</button>';
+    html+='        </div>';
+    html+='        </div>';
+    html+='    </div>';
+    html+='</div>';
+    $('.modal_content').html(html);
+    $("#DeleteModal").show();
+
+
+}
+$(document).on("click touch",".accept-delete",function(){
+    var v=$(this).val();
+    window.location=v;
+});
+$(document).on("click touch",".reject-delete",function(){
+    $("#DeleteModal").hide();
+    $('.modal_content').html("");
+});
