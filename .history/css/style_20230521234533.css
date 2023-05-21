@@ -845,11 +845,8 @@ ul.pagination li.active a {
 .table-row:hover .menu-tools {
     opacity: 1;
 }
-.btn-search:hover{
-    background: var(--c-dark) !important;
-}
-.btn-search:hover i{
-    color: var(--light1) !important;
+.btn-search:{
+
 }
 /* MODUL */
 

@@ -849,7 +849,7 @@ ul.pagination li.active a {
     background: var(--c-dark) !important;
 }
 .btn-search:hover i{
-    color: var(--light1) !important;
+    background: var(--c-dark) !important;
 }
 /* MODUL */
 

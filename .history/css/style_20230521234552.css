@@ -846,10 +846,7 @@ ul.pagination li.active a {
     opacity: 1;
 }
 .btn-search:hover{
-    background: var(--c-dark) !important;
-}
-.btn-search:hover i{
-    color: var(--light1) !important;
+    color: ;
 }
 /* MODUL */
 
