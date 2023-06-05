@@ -626,7 +626,7 @@ ul.responsive-table2 {
     align-items: flex-end;
     z-index: 9999;
     left: 0;
-    bottom: 0;
+    bottom: 10rem;
 }
 
 #toasts .toast {
