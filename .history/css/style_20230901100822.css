@@ -251,7 +251,7 @@ body {
 .sidebar-link,
 a.sidebar-link {
     display: block;
-    padding: .9rem .75rem;
+    padding: .65rem .75rem;
     margin: 0 .5rem;
     color: var(--c-gray);
     border-radius: .2rem;
@@ -530,7 +530,7 @@ li.page-links:last-child::after {
 
 .header-nav {
     /* width: fit-content; */
-    padding: 5.8px 0px;
+    padding: 5.8px 0px
     top: 60px;
     z-index: 1;
 }

@@ -251,7 +251,7 @@ body {
 .sidebar-link,
 a.sidebar-link {
     display: block;
-    padding: .9rem .75rem;
+    padding: .5rem .75rem;
     margin: 0 .5rem;
     color: var(--c-gray);
     border-radius: .2rem;
