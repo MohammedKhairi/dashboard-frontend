@@ -1064,22 +1064,19 @@ html[dir="ltr"] .menu-tools {
         flex-basis: 50%;
         text-align: right;
         background-color: var(--c-light);
+        display: inline-flex;
     }
 
     html[dir="ltr"] .responsive-table2 .col:before,
-    .responsive-table2 .table-row>div {
+    .responsive-table2 .table-row div {
         text-align: left;
     }
 
-    .responsive-table2 .table-row>div {
+    .responsive-table2 .table-row div {
         text-align: right;
         flex-basis: 50%;
-        display: grid;
+    }
 
-    }
-    .tools-content{
-        padding: 5px 0px;
-    }
     .tab-v1 button {
         width: 100%;
     }

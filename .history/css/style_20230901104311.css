@@ -1067,18 +1067,19 @@ html[dir="ltr"] .menu-tools {
     }
 
     html[dir="ltr"] .responsive-table2 .col:before,
-    .responsive-table2 .table-row>div {
+    .responsive-table2 .table-row div {
         text-align: left;
     }
 
-    .responsive-table2 .table-row>div {
+    .responsive-table2 .table-row div {
         text-align: right;
         flex-basis: 50%;
         display: grid;
 
     }
     .tools-content{
-        padding: 5px 0px;
+        display: flex;
+        flex
     }
     .tab-v1 button {
         width: 100%;

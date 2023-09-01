@@ -1078,7 +1078,9 @@ html[dir="ltr"] .menu-tools {
 
     }
     .tools-content{
-        padding: 5px 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
     }
     .tab-v1 button {
         width: 100%;
