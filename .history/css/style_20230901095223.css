@@ -939,9 +939,18 @@ html[dir="ltr"] .sidebar {
     left: 0;
 }
 
-html[dir="ltr"] .page-content {
-    left: 300px;
-    right: 0;
+.page-content {
+    /* width: 83.33333333%;
+    right: 330px; */
+    position: fixed;
+    width: calc(100% - 300px);
+    right: 300px;
+    height: 100%;
+    transition: all .3s ease;
+    padding: 0px 10px;
+    z-index: 1;
+    overflow-y: scroll;
+
 }
 
 html[dir="ltr"] .sidebar.toggled {

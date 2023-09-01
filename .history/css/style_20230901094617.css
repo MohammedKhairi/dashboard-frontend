@@ -523,14 +523,14 @@ li.page-links:last-child::after {
 .topbar,
 .header-nav {
     position: sticky;
-    overflow: hidden;
+    overflow: hidden; */
     /* z-index: 2000; */
-    background: var(--c-gray);
+    /* background: var(--c-gray);
 }
 
 .header-nav {
     /* width: fit-content; */
-    padding: 6px 0px;
+    padding: 10px 0px;
     top: 60px;
     z-index: 1;
 }
@@ -937,11 +937,6 @@ html[dir="ltr"] .page-content.toggled {
 
 html[dir="ltr"] .sidebar {
     left: 0;
-}
-
-html[dir="ltr"] .page-content {
-    left: 300px;
-    right: 0;
 }
 
 html[dir="ltr"] .sidebar.toggled {

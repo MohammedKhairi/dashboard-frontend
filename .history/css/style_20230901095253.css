@@ -941,7 +941,6 @@ html[dir="ltr"] .sidebar {
 
 html[dir="ltr"] .page-content {
     left: 300px;
-    right: 0;
 }
 
 html[dir="ltr"] .sidebar.toggled {
